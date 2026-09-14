@@ -1,5 +1,36 @@
-export default function App() {
+import { useState, useEffect } from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Features from './components/Features';
+import HowItWorks from './components/HowItWorks';
+import Dashboard from './components/Dashboard';
+import Pricing from './components/Pricing';
+import FAQ from './components/FAQ';
+import Footer from './components/Footer';
+
+function App() {
+  const [darkMode, setDarkMode] = useState(true);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [darkMode]);
+
   return (
-    <div/>
+    <div className={`min-h-screen ${darkMode ? 'bg-gray-950 text-white' : 'bg-white text-gray-900'} transition-colors duration-300`}>
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Hero />
+      <Features />
+      <HowItWorks />
+      <Dashboard />
+      <Pricing />
+      <FAQ />
+      <Footer />
+    </div>
   );
 }
+
+export default App;
