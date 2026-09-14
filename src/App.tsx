@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Features from './components/Features';
 import HowItWorks from './components/HowItWorks';
 import Dashboard from './components/Dashboard';
+import LiveDemo from './components/LiveDemo';
 import APIArchitecture from './components/APIArchitecture';
 import Pricing from './components/Pricing';
 import FAQ from './components/FAQ';
@@ -26,6 +27,7 @@ function App() {
       <Hero />
       <Features />
       <HowItWorks />
+      <LiveDemo />
       <Dashboard />
       <APIArchitecture />
       <Pricing />
