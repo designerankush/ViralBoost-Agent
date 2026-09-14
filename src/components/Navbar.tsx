@@ -43,7 +43,7 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
               )}
             </button>
             <button className="hidden sm:inline-flex px-4 py-2 rounded-xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white text-sm font-semibold hover:from-violet-500 hover:to-fuchsia-500 transition-all shadow-lg shadow-violet-500/25">
-              Get Started Free
+              Get Started — Free Forever
             </button>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
@@ -69,7 +69,7 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
           <a href="#pricing" className="block text-sm font-medium py-2">Pricing</a>
           <a href="#faq" className="block text-sm font-medium py-2">FAQ</a>
           <button className="w-full px-4 py-2 rounded-xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white text-sm font-semibold">
-            Get Started Free
+            Get Started — Free Forever
           </button>
         </div>
       )}

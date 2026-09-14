@@ -5,8 +5,16 @@ export default function FAQ() {
 
   const faqs = [
     {
+      question: 'Is ViralBoost AI really 100% free?',
+      answer: 'Yes! ViralBoost AI is completely free with no hidden costs, no premium tiers, and no credit card required. You get access to every feature — unlimited posts, unlimited accounts, full analytics, AI optimization, and more. We believe every creator deserves powerful growth tools regardless of budget.'
+    },
+    {
       question: 'How does ViralBoost AI increase visibility without Meta Ads?',
       answer: 'Our AI agent uses advanced algorithm analysis to understand what content gets boosted organically by social media platforms. It optimizes your posting times, hashtags, content format, and engagement patterns to trigger organic distribution. It also engages with relevant communities and groups to amplify your reach — all without spending money on paid ads.'
+    },
+    {
+      question: 'How is this free? What\'s the catch?',
+      answer: 'No catch! We\'re community-driven and supported by optional enterprise services for large agencies who need white-label solutions. Our mission is to democratize social media growth — when creators and businesses succeed organically, the entire ecosystem thrives. Your success fuels our platform\'s evolution.'
     },
     {
       question: 'Is this compliant with Facebook and Instagram terms of service?',
@@ -18,23 +26,23 @@ export default function FAQ() {
     },
     {
       question: 'What social media platforms are supported?',
-      answer: 'We currently support Facebook, Instagram, Twitter/X, LinkedIn, TikTok, YouTube, and Pinterest. Our AI adapts content and strategies specifically for each platform\'s unique algorithm and audience behavior patterns.'
+      answer: 'We currently support Facebook, Instagram, Twitter/X, LinkedIn, TikTok, YouTube, and Pinterest. Our AI adapts content and strategies specifically for each platform\'s unique algorithm and audience behavior patterns. All platforms are included in the free plan — no restrictions.'
     },
     {
       question: 'Do I need to write my own content?',
-      answer: 'You can! But you don\'t have to. Our AI can generate content ideas, write captions, suggest visuals, and even create complete posts. You can also write your own content and let our AI optimize it for maximum reach. It\'s completely flexible.'
+      answer: 'You can! But you don\'t have to. Our AI can generate content ideas, write captions, suggest visuals, and even create complete posts. You can also write your own content and let our AI optimize it for maximum reach. It\'s completely flexible and all free.'
     },
     {
-      question: 'How is this different from other social media tools?',
-      answer: 'Unlike scheduling tools that just post your content, or analytics tools that only show you data, ViralBoost AI actively works to grow your presence. It doesn\'t just schedule — it optimizes, engages, distributes, and learns. Think of it as having a full social media team powered by AI, at a fraction of the cost.'
+      question: 'Are there any usage limits on the free plan?',
+      answer: 'No! There are absolutely no limits. Unlimited posts, unlimited social accounts, unlimited analytics, unlimited AI suggestions. We don\'t throttle your growth or hold back features behind a paywall. Everything is available from day one.'
     },
     {
       question: 'Can I use this for my clients as an agency?',
-      answer: 'Absolutely! Our Enterprise plan is designed for agencies. You get white-label access, team collaboration features, and the ability to manage unlimited client accounts. Many agencies use ViralBoost AI to deliver organic growth results without recommending expensive ad budgets to their clients.'
+      answer: 'Absolutely! You can manage unlimited client accounts for free. For agencies that need white-label branding, custom integrations, or dedicated support, we offer optional enterprise services — but the core platform is free for everyone.'
     },
     {
-      question: 'What happens after my free trial?',
-      answer: 'After your 14-day free trial, you can choose a plan that fits your needs. If you decide not to continue, your account simply pauses — no charges, no hassle. We don\'t require a credit card for the trial, so there\'s zero risk.'
+      question: 'How is this different from other social media tools?',
+      answer: 'Unlike scheduling tools that just post your content, or analytics tools that only show you data, ViralBoost AI actively works to grow your presence. It doesn\'t just schedule — it optimizes, engages, distributes, and learns. Think of it as having a full social media team powered by AI, completely free.'
     }
   ];
 
@@ -52,7 +60,7 @@ export default function FAQ() {
             </span>
           </h2>
           <p className="text-gray-400 text-lg">
-            Everything you need to know about ViralBoost AI.
+            Everything you need to know about ViralBoost AI — yes, it's really free.
           </p>
         </div>
 
@@ -92,11 +100,12 @@ export default function FAQ() {
         </div>
 
         {/* CTA */}
-        <div className="mt-16 text-center p-8 rounded-2xl bg-gradient-to-r from-violet-500/10 to-fuchsia-500/10 border border-violet-500/20">
-          <h3 className="text-xl font-bold mb-2">Still have questions?</h3>
-          <p className="text-gray-400 mb-6">Our team is here to help you get started.</p>
+        <div className="mt-16 text-center p-8 rounded-2xl bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20">
+          <div className="text-3xl mb-3">🎉</div>
+          <h3 className="text-xl font-bold mb-2">Ready to grow for free?</h3>
+          <p className="text-gray-400 mb-6">Start using ViralBoost AI right now — no payment, no signup fee, no limits.</p>
           <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-semibold hover:from-violet-500 hover:to-fuchsia-500 transition-all shadow-lg shadow-violet-500/25">
-            Talk to Our Team
+            Get Started — It's Free →
           </button>
         </div>
       </div>

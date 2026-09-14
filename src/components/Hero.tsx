@@ -27,12 +27,12 @@ export default function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-violet-500/10 border border-violet-500/20 mb-8">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 mb-8">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
           </span>
-          <span className="text-sm text-violet-300 font-medium">AI-Powered Organic Growth • No Meta Ads Required</span>
+          <span className="text-sm text-green-300 font-medium">🎉 100% Free Forever • AI-Powered Organic Growth • No Meta Ads</span>
         </div>
 
         {/* Heading */}
@@ -45,13 +45,13 @@ export default function Hero() {
 
         <p className="max-w-2xl mx-auto text-lg sm:text-xl text-gray-400 mb-10 leading-relaxed">
           Our AI agent automatically optimizes your Facebook, Instagram, and social media posts 
-          for maximum organic reach — <strong className="text-white">without spending a single dollar on Meta Ads</strong>.
+          for maximum organic reach — <strong className="text-white">completely free, without spending a single dollar on Meta Ads</strong>.
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
           <button className="group px-8 py-4 rounded-2xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-bold text-lg hover:from-violet-500 hover:to-fuchsia-500 transition-all shadow-2xl shadow-violet-500/30 hover:shadow-violet-500/50 hover:scale-105">
-            Start Free Trial
+            Start Free — $0 Forever
             <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
           </button>
           <button className="px-8 py-4 rounded-2xl border border-gray-700 text-gray-300 font-semibold text-lg hover:bg-gray-800/50 transition-all hover:border-gray-600">
@@ -59,12 +59,28 @@ export default function Hero() {
           </button>
         </div>
 
+        {/* Free badge */}
+        <div className="flex items-center justify-center gap-6 mb-16 flex-wrap">
+          <span className="flex items-center gap-2 text-sm text-green-400">
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+            No Credit Card
+          </span>
+          <span className="flex items-center gap-2 text-sm text-green-400">
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+            No Hidden Fees
+          </span>
+          <span className="flex items-center gap-2 text-sm text-green-400">
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+            Unlimited Everything
+          </span>
+        </div>
+
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
           <StatCard value={`${count.toLocaleString()}+`} label="Posts Boosted" />
           <StatCard value="340%" label="Avg. Reach Increase" />
           <StatCard value="50K+" label="Active Users" />
-          <StatCard value="$0" label="Ad Spend Required" />
+          <StatCard value="$0" label="Cost Forever" highlight />
         </div>
 
         {/* Platform logos */}
@@ -84,10 +100,10 @@ export default function Hero() {
   );
 }
 
-function StatCard({ value, label }: { value: string; label: string }) {
+function StatCard({ value, label, highlight }: { value: string; label: string; highlight?: boolean }) {
   return (
-    <div className="p-4 rounded-2xl bg-gray-900/50 border border-gray-800 backdrop-blur-sm">
-      <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
+    <div className={`p-4 rounded-2xl backdrop-blur-sm ${highlight ? 'bg-green-500/10 border border-green-500/30' : 'bg-gray-900/50 border border-gray-800'}`}>
+      <div className={`text-2xl sm:text-3xl font-bold ${highlight ? 'bg-gradient-to-r from-green-400 to-emerald-400' : 'bg-gradient-to-r from-violet-400 to-fuchsia-400'} bg-clip-text text-transparent`}>
         {value}
       </div>
       <div className="text-sm text-gray-400 mt-1">{label}</div>

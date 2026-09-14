@@ -10,13 +10,13 @@ export default function Footer() {
               Ready to Go Viral <span className="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">Organically?</span>
             </h2>
             <p className="text-gray-400 max-w-xl mx-auto mb-8">
-              Join 50,000+ creators and businesses growing their social media presence with AI — no ads required.
+              Join 50,000+ creators and businesses growing their social media presence with AI — completely free, no ads required.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button className="px-8 py-4 rounded-2xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-bold text-lg hover:from-violet-500 hover:to-fuchsia-500 transition-all shadow-2xl shadow-violet-500/30">
-                Start Your Free Trial →
+                Start Free — $0 Forever →
               </button>
-              <span className="text-sm text-gray-500">No credit card required</span>
+              <span className="text-sm text-green-400 font-medium">✓ No credit card • No limits • No fees</span>
             </div>
           </div>
         </div>
