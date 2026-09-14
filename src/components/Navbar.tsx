@@ -27,6 +27,7 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
             <a href="#features" className={`text-sm font-medium ${darkMode ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-gray-900'} transition-colors`}>Features</a>
             <a href="#how-it-works" className={`text-sm font-medium ${darkMode ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-gray-900'} transition-colors`}>How It Works</a>
             <a href="#dashboard" className={`text-sm font-medium ${darkMode ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-gray-900'} transition-colors`}>Dashboard</a>
+            <a href="#api" className={`text-sm font-medium ${darkMode ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-gray-900'} transition-colors`}>APIs</a>
             <a href="#pricing" className={`text-sm font-medium ${darkMode ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-gray-900'} transition-colors`}>Pricing</a>
             <a href="#faq" className={`text-sm font-medium ${darkMode ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-gray-900'} transition-colors`}>FAQ</a>
           </div>
@@ -66,6 +67,7 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
           <a href="#features" className="block text-sm font-medium py-2">Features</a>
           <a href="#how-it-works" className="block text-sm font-medium py-2">How It Works</a>
           <a href="#dashboard" className="block text-sm font-medium py-2">Dashboard</a>
+          <a href="#api" className="block text-sm font-medium py-2">APIs</a>
           <a href="#pricing" className="block text-sm font-medium py-2">Pricing</a>
           <a href="#faq" className="block text-sm font-medium py-2">FAQ</a>
           <button className="w-full px-4 py-2 rounded-xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white text-sm font-semibold">
