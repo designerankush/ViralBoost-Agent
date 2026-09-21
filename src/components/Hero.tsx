@@ -50,13 +50,13 @@ export default function Hero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-          <button className="group px-8 py-4 rounded-2xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-bold text-lg hover:from-violet-500 hover:to-fuchsia-500 transition-all shadow-2xl shadow-violet-500/30 hover:shadow-violet-500/50 hover:scale-105">
+          <a href="/signup" className="group px-8 py-4 rounded-2xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-bold text-lg hover:from-violet-500 hover:to-fuchsia-500 transition-all shadow-2xl shadow-violet-500/30 hover:shadow-violet-500/50 hover:scale-105 inline-block">
             Start Free — $0 Forever
             <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
-          </button>
-          <button className="px-8 py-4 rounded-2xl border border-gray-700 text-gray-300 font-semibold text-lg hover:bg-gray-800/50 transition-all hover:border-gray-600">
+          </a>
+          <a href="#live-demo" className="px-8 py-4 rounded-2xl border border-gray-700 text-gray-300 font-semibold text-lg hover:bg-gray-800/50 transition-all hover:border-gray-600 inline-block">
             Watch Demo
-          </button>
+          </a>
         </div>
 
         {/* Free badge */}

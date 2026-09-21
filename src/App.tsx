@@ -1,39 +1,45 @@
-import { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import HowItWorks from './components/HowItWorks';
-import Dashboard from './components/Dashboard';
-import LiveDemo from './components/LiveDemo';
-import APIArchitecture from './components/APIArchitecture';
-import Pricing from './components/Pricing';
-import FAQ from './components/FAQ';
-import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { AuthProvider, useAuth } from './context/AuthContext';
+import Landing from './pages/Landing';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import Dashboard from './pages/Dashboard';
+import CreatePost from './pages/CreatePost';
+import MyPosts from './pages/MyPosts';
+import Analytics from './pages/Analytics';
+import Accounts from './pages/Accounts';
+import Settings from './pages/Settings';
+import ProtectedRoute from './components/ProtectedRoute';
+
+function AppRoutes() {
+  return (
+    <Routes>
+      {/* Public routes */}
+      <Route path="/" element={<Landing />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+
+      {/* Protected routes */}
+      <Route path="/app" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+      <Route path="/app/create" element={<ProtectedRoute><CreatePost /></ProtectedRoute>} />
+      <Route path="/app/posts" element={<ProtectedRoute><MyPosts /></ProtectedRoute>} />
+      <Route path="/app/analytics" element={<ProtectedRoute><Analytics /></ProtectedRoute>} />
+      <Route path="/app/accounts" element={<ProtectedRoute><Accounts /></ProtectedRoute>} />
+      <Route path="/app/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
+
+      {/* Catch all */}
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
+  );
+}
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [darkMode]);
-
   return (
-    <div className={`min-h-screen ${darkMode ? 'bg-gray-950 text-white' : 'bg-white text-gray-900'} transition-colors duration-300`}>
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Hero />
-      <Features />
-      <HowItWorks />
-      <LiveDemo />
-      <Dashboard />
-      <APIArchitecture />
-      <Pricing />
-      <FAQ />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <AuthProvider>
+        <AppRoutes />
+      </AuthProvider>
+    </BrowserRouter>
   );
 }
 

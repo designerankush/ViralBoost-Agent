@@ -13,9 +13,9 @@ export default function Footer() {
               Join 50,000+ creators and businesses growing their social media presence with AI — completely free, no ads required.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <button className="px-8 py-4 rounded-2xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-bold text-lg hover:from-violet-500 hover:to-fuchsia-500 transition-all shadow-2xl shadow-violet-500/30">
+              <a href="/signup" className="px-8 py-4 rounded-2xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-bold text-lg hover:from-violet-500 hover:to-fuchsia-500 transition-all shadow-2xl shadow-violet-500/30 inline-block">
                 Start Free — $0 Forever →
-              </button>
+              </a>
               <span className="text-sm text-green-400 font-medium">✓ No credit card • No limits • No fees</span>
             </div>
           </div>

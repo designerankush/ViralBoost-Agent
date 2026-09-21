@@ -44,9 +44,9 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" /></svg>
               )}
             </button>
-            <button className="hidden sm:inline-flex px-4 py-2 rounded-xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white text-sm font-semibold hover:from-violet-500 hover:to-fuchsia-500 transition-all shadow-lg shadow-violet-500/25">
+            <a href="/signup" className="hidden sm:inline-flex px-4 py-2 rounded-xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white text-sm font-semibold hover:from-violet-500 hover:to-fuchsia-500 transition-all shadow-lg shadow-violet-500/25">
               Get Started — Free Forever
-            </button>
+            </a>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="md:hidden p-2 rounded-lg"
@@ -71,9 +71,9 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
           <a href="#api" className="block text-sm font-medium py-2">APIs</a>
           <a href="#pricing" className="block text-sm font-medium py-2">Pricing</a>
           <a href="#faq" className="block text-sm font-medium py-2">FAQ</a>
-          <button className="w-full px-4 py-2 rounded-xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white text-sm font-semibold">
+          <a href="/signup" className="block w-full px-4 py-2 rounded-xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white text-sm font-semibold text-center">
             Get Started — Free Forever
-          </button>
+          </a>
         </div>
       )}
     </nav>

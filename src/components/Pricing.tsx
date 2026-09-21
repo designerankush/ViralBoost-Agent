@@ -51,9 +51,9 @@ export default function Pricing() {
             </div>
 
             {/* CTA */}
-            <button className="w-full py-4 rounded-2xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-bold text-lg hover:from-violet-500 hover:to-fuchsia-500 transition-all shadow-xl shadow-violet-500/30 hover:shadow-violet-500/50 hover:scale-[1.02] mb-8">
+            <a href="/signup" className="block w-full py-4 rounded-2xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-bold text-lg hover:from-violet-500 hover:to-fuchsia-500 transition-all shadow-xl shadow-violet-500/30 hover:shadow-violet-500/50 hover:scale-[1.02] mb-8 text-center">
               Get Started Free — No Sign Up Fee →
-            </button>
+            </a>
 
             {/* Features Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
