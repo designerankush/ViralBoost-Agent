@@ -104,9 +104,9 @@ export default function FAQ() {
           <div className="text-3xl mb-3">🎉</div>
           <h3 className="text-xl font-bold mb-2">Ready to grow for free?</h3>
           <p className="text-gray-400 mb-6">Start using ViralBoost AI right now — no payment, no signup fee, no limits.</p>
-          <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-semibold hover:from-violet-500 hover:to-fuchsia-500 transition-all shadow-lg shadow-violet-500/25">
+          <a href="/signup" className="inline-block px-6 py-3 rounded-xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-semibold hover:from-violet-500 hover:to-fuchsia-500 transition-all shadow-lg shadow-violet-500/25">
             Get Started — It's Free →
-          </button>
+          </a>
         </div>
       </div>
     </section>
